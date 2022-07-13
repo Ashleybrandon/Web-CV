@@ -1,0 +1,59 @@
+
+
+:root {
+    --brand-1: #e28618;
+    --brand-2: #1932b3;
+    --white: #ffffff;
+    --black: #1a1d24;
+    --gs-1: #333;
+    --gs-2: #444;
+    --gs-3: #676767;
+    --gs-4: #797979;
+    --gs-5: #EEE;
+    --gs-6: #F7F7F7;
+}
+
+.sun-icon {
+    display: none;
+}
+
+.dark {
+    body {
+        background: var(--black);
+        color: var(--gs-6);
+    }
+    h1, h2, h3, h4, h5, h6 {
+        color: var(--gs-6);
+      }
+    .moon-icon {
+        display: none;
+    }
+    .sun-icon {
+        display: initial;
+    }
+
+    .flex.social-icon {
+        margin: 10px;
+        a {
+            color: var(--black);
+            background: var(--white);
+            border: 1px solid var(--white);
+            svg {
+                path {
+                    fill: var(--black);
+                    transition: all 300ms;
+                }
+            }
+            &:hover {
+                background: var(--black);
+                color: var(--white);
+                svg {
+                    path {
+                        fill: var(--white);
+                    }
+                }
+            }
+        }
+    }
+}
+

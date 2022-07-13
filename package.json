@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "dev": "parcel index.html styles.scss",
+    "build": "parcel build dist/index.html"
+  },
+ 
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "sass": "^1.53.0"
+  }
+}
